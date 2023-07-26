@@ -1,0 +1,29 @@
+{
+  "rules": [
+    {
+      "field_name": "from",
+      "predicate": "contains",
+      "value": "tenmiles.com"
+    },
+    {
+      "field_name": "subject",
+      "predicate": "contains",
+      "value": "interview"
+    },
+    {
+      "field_name": "date received",
+      "predicate": "is less than",
+      "value": 2
+    }
+  ],
+  "collective_predicate": "all",
+  "actions": [
+    {
+      "action": "mark-as-read"
+    },
+    {
+      "action": "move-message",
+      "to": "inbox"
+    }
+  ]
+}
